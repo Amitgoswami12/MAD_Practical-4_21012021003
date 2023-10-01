@@ -7,5 +7,10 @@ class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
+        val Login: Button = findViewById(R.id.Loginbtn) 
+        Login.setOnClickListener { 
+            Intent(this@RegistrationActivity, LoginActivity::class.java).also { startActivity(it) } 
+        } 
+
     }
 }
