@@ -8,6 +8,34 @@
 
     tools:context=".MainActivity">
 
+  <ImageView       
+      android:id="@+id/imageView"       
+      android:layout_height="200dp"        
+      app:layout_constraintEnd_toEndOf="parent"         
+      android:layout_width="match_parent"        
+      app:layout_constraintStart_toStartOf="parent"        
+      app:layout_constraintTop_toTopOf="parent" 
+        app:srcCompat="@drawable/guni_pink_logo" /> 
+ 
+    <com.google.android.material.card.MaterialCardView       
+        android:id="@+id/materialCardView"        
+        android:layout_width="match_parent"        
+        android:layout_height="250dp"        
+        android:layout_marginHorizontal="20dp"        
+        android:layout_marginBottom="150dp" 
+        android:elevation="20dp"        
+        app:cardCornerRadius="20dp"        
+        app:cardElevation="20dp"        
+        app:layout_constraintBottom_toBottomOf="parent"       
+        app:layout_constraintEnd_toEndOf="parent"        
+        app:layout_constraintStart_toStartOf="parent"        
+        app:layout_constraintTop_toBottomOf="@+id/imageView" 
+        app:layout_constraintVertical_bias="0.23"> 
+ 
+        <androidx.constraintlayout.widget.ConstraintLayout            
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent"> 
+ 
 
     <Button
         android:id="@+id/Login"
@@ -28,5 +56,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout> 
+    </com.google.android.material.card.MaterialCardView> 
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
